@@ -6,7 +6,7 @@
 #include <map>
 using namespace std;
 
-static bitset<32> ATDATA;  // Largura de bus de 32 bits
+static bitset<32> ATDATA;  // Bus width of 32 bits as the Manual Recommends
 static int8_t ATBYTES = 0; // How many bytes-1 of data are in the buffer
 
 #endif

@@ -22,6 +22,13 @@ public:
     void flushData(); // Ask for all the data to be sent
 
     queue<bitset<32>> getData(bool clear); // Get the data on the buffer and clear if true
+
+    void reset()
+    {
+        int size = Data.size(), i;
+        for (i = 0; i < size; i++)
+            Data.pop();
+    }
 };
 
 #endif

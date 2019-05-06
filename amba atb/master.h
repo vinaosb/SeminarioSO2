@@ -21,6 +21,13 @@ public:
 
     void flushData(bitset<7> ID);
 
+    void reset()
+    {
+        for (list<pair<bitset<7>, bitset<32>>>::iterator it = Data.begin(); it != Data.end(); ++it)
+            it->second.reset();
+        Data.clear();
+    }
+
 private:
     map<bitset<7>, Slave *> listSlaves;
     list<pair<bitset<7>, bitset<32>>> Data;
